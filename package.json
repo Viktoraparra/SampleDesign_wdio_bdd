@@ -7,6 +7,7 @@
     "wdio": "wdio run wdio.conf.js",
     "sanity": "./node_modules/.bin/wdio run wdio.conf.js --cucumberOpts.tagExpression='@sanity'",
     "End2End": "./node_modules/.bin/wdio run wdio.conf.js --cucumberOpts.tagExpression='End2End'",
+    "report": "node node_modules/wdio-html-nice-reporter/lib/makeReport.js master-report.html 'reports/html-reports/'",
     "generate-report": "allure generate allure-results --clean && allure open"
   },
   "author": "Victor Parra",
